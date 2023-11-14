@@ -4,6 +4,7 @@ import activities.AlarmScreen;
 import activities.MainScreen;
 import activities.NameDialog;
 import activities.SetTimeDialog;
+import jdk.jfr.Description;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -19,6 +20,7 @@ public class CreateAlarmTest {
     NameDialog nameDialog = new NameDialog();
     SetTimeDialog setTimeDialog = new SetTimeDialog();
     @Test
+    @Description("TC1 - Verify alarm creation succesfully")
     public void createAlarm(){
         mainScreen.tryCloseDialog();
         mainScreen.addAlarmButton.click();
